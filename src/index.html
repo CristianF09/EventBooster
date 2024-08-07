@@ -1,0 +1,54 @@
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Booster</title>
+    <link rel="stylesheet" href="./styles/index.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+  </head>
+  <body>
+    <!-- Include header -->
+    <div id="header-container"></div>
+
+    <!-- Include search bar and event gallery -->
+    <div id="searchbar-container"></div>
+
+    <!-- Modal Structure -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modal-title">Event Title</h2>
+        <img id="modal-image" src="" alt="Event Image" />
+        <p id="modal-description">Event Description</p>
+      </div>
+    </div>
+
+    <!-- Include pagination -->
+    <div id="pagination-container"></div>
+
+    <script type="module" src="./js/searchbar.js"></script>
+    <script type="module" src="./js/pagination.js"></script>
+    <script>
+      // Dynamically load header, searchbar, and pagination
+      const loadHTML = async (id, file) => {
+        const response = await fetch(file);
+        document.getElementById(id).innerHTML = await response.text();
+      };
+
+      loadHTML('header-container', './header.html');
+      loadHTML('searchbar-container', './searchbar.html');
+      loadHTML('pagination-container', './pagination.html');
+    </script>
+  </body>
+</html>

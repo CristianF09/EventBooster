@@ -1,0 +1,160 @@
+:root {
+  --font-family: 'Montserrat', sans-serif;
+  --main-text-color: #dc56c5;
+  --secondary-text-color: #fff;
+  --third-text-color: #939393;
+  --stroke-color: #212121;
+  --background-color: #0e0e0e;
+}
+
+* {
+  font-family: var(--font-family);
+  font-weight: normal;
+  font-size: 16px;
+}
+*,
+.section-holder {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.quartercircle {
+  width: 229px;
+  height: 193px;
+  background: linear-gradient(
+    231deg,
+    rgba(196, 196, 196, 0.1),
+    rgba(196, 196, 196, 0.1)
+  );
+  backdrop-filter: blur(10px);
+  border-bottom-right-radius: 229px;
+  position: absolute;
+  top: 0;
+}
+
+.logo img {
+  position: absolute;
+  top: 41px;
+  left: 16px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  max-width: 80rem;
+  background-size: cover;
+  background-position: center center;
+  background-image: linear-gradient(
+      rgba(11, 11, 11, 0.5),
+      rgba(11, 11, 11, 0.5)
+    ),
+    url(../images/pic.webp);
+  height: 446px;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .container {
+    background-image: linear-gradient(
+        rgba(11, 11, 11, 0.5),
+        rgba(11, 11, 11, 0.5)
+      ),
+      url(../images/pic@2x.webp);
+  }
+}
+
+.page-title {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+  font-weight: 900;
+  font-size: 50px;
+  max-width: 608px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    background-image: linear-gradient(
+        rgba(11, 11, 11, 0.5),
+        rgba(11, 11, 11, 0.5)
+      ),
+      url(../images/pic-tablet.webp);
+    height: 364px;
+  }
+
+  @media (max-device-pixel-ratio: 2),
+    (-webkit-max-device-pixel-ratio: 2),
+    (max-resolution: 192dpi),
+    (max-resolution: 2dppx) {
+    .container {
+      background-image: linear-gradient(
+          rgba(11, 11, 11, 0.5),
+          rgba(11, 11, 11, 0.5)
+        ),
+        url(../images/pic-tablet@2x.webp);
+    }
+  }
+
+  .page-title {
+    font-size: 30px;
+    max-width: 400px;
+  }
+
+  .quartercircle {
+    width: 167px;
+    height: 135px;
+  }
+
+  .logo img {
+    width: 80px;
+    top: 23px;
+    left: 26px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    background-image: linear-gradient(
+        rgba(11, 11, 11, 0.5),
+        rgba(11, 11, 11, 0.5)
+      ),
+      url(../images/pic-mobile.webp);
+    height: 364px;
+  }
+
+  @media (max-device-pixel-ratio: 2),
+    (-webkit-max-device-pixel-ratio: 2),
+    (max-resolution: 192dpi),
+    (max-resolution: 2dppx) {
+    .container {
+      background-image: linear-gradient(
+          rgba(11, 11, 11, 0.5),
+          rgba(11, 11, 11, 0.5)
+        ),
+        url(../images/pic-mobile@2x.webp);
+    }
+  }
+  .page-title {
+    font-size: 18px;
+    max-width: 275px;
+    padding-top: 80px;
+  }
+
+  .quartercircle {
+    width: 106px;
+    height: 90px;
+  }
+
+  .logo img {
+    width: 60px;
+    top: 20px;
+    left: 19px;
+  }
+}

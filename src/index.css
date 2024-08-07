@@ -1,0 +1,60 @@
+/* index.scss */
+
+/* Cards Section Styles */
+.cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #000; /* culoare de fundal */
+  padding: 20px;
+}
+
+.card {
+  background-color: #1a1a1a; /* culoare de fundal pentru card */
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  width: 200px;
+  margin: 10px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #fff;
+}
+
+.card h3 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.card p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #000; /* culoare de fundal negru */
+  color: #fff; /* culoare text alb */
+  text-align: center; /* alinierea textului la centru */
+  padding: 20px 0; /* spațierea interioară de 20px sus și jos */
+  font-family: 'Montserrat', sans-serif; /* fontul Montserrat */
+}
+
+footer p {
+  margin: 0; /* eliminarea marginilor implicite */
+  font-size: 14px; /* dimensiunea textului */
+}
+
+footer p a {
+  color: #fff; /* culoarea link-ului alb */
+  text-decoration: none; /* eliminarea sublinierii */
+}
+
+footer p a:hover {
+  text-decoration: underline; /* subliniere la hover */
+}

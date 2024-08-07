@@ -1,0 +1,50 @@
+{
+  "name": "eventbooster-kata",
+  "version": "2.0.0",
+  "description": "A web application for discovering and booking events around the world.",
+  "homepage": "https://KatalinLengyel.github.io/eventbooster-kata",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /eventbooster-kata/",
+    "lint": "eslint src/**/*.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KatalinLengyel/eventbooster-kata.git"
+  },
+  "keywords": [
+    "events",
+    "ticketing",
+    "web",
+    "UI"
+  ],
+  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KatalinLengyel/eventbooster-kata/issues"
+  },
+  "dependencies": {
+    "axios": "^1.7.3",
+    "modern-normalize": "^1.1.0",
+    "notiflix": "^3.2.7"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
+    "buffer": "^6.0.3",
+    "parcel": "^2.6.0",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^1.7.4",
+    "process": "^0.11.10",
+    "sass": "^1.77.8",
+    "eslint": "^8.0.0",
+    "eslint-config-airbnb": "^19.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.4.0",
+    "jest": "^29.0.0",
+    "babel-jest": "^29.0.0"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}

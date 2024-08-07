@@ -1,0 +1,29 @@
+.pagination-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 60px 0;
+  background-color: var(--background-color);
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.pages li.active {
+  padding: 5px 12px;
+  border: 1px solid var(--main-text-color);
+  border-top-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
+
+.pages li {
+    padding: 5px 12px;
+    color: var(--secondary-text-color);
+    cursor: pointer;
+}
